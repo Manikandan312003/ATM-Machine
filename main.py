@@ -46,7 +46,7 @@ while 1:
 2.Deposit
 3.Check Balance
 4.Exit\n"""))
-    if choice == 4:
+    if choice >= 4:
         print("Thank You")
         break
     if choice == 3:
@@ -58,7 +58,7 @@ while 1:
             Ram.withDraw(cash)
         if choice == 2:
             Ram.deposit(cash)
-        Query = int(input("Do you want to display Balance:\n1.Yes \n2.No: "))
+        Query = int(input("Do you want to display Balance:\n1.Yes 2.No: "))
         if Query == 1:
             print(Ram.getbalance())
     except Exception as AtmException:
